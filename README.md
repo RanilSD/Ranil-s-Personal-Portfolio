@@ -104,3 +104,7 @@ You are required to submit BOTH of the following for review:
 
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+
+had to create my own portfolio from scratch and i have never made a website before in my life. this was a bit of a task but i pushed through and will be pushuing this project to submit with the intent to build upon.

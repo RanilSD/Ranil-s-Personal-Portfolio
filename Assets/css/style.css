@@ -18,6 +18,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 .header h1 {
     display: flex;
@@ -44,7 +45,10 @@ img {
 a {
     color: #52f033;
     text-decoration: none;
+    font-size: min(25px, 3vw);
 }
+
+
 
 p {
     flex-wrap: wrap;
@@ -60,7 +64,7 @@ p {
 .about-me {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    /* height: 300px; had to comment out was preventing proper flex */
     color: #52f033;
 }
 
@@ -76,23 +80,48 @@ p {
     position: relative;
     margin-bottom: 50px;
     padding: 50px;
-    height: 300px;
+    /* height: 300px; had to comment out preventing flex*/
     color: #52f033;
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: #52f033;
+    border: 2px solid black;
+}
+
+.projects-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    border: 2px solid white;
+}
+
+.projects-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 2px solid blue;
+}
+
 .my-projects ul {
     list-style-type: none;
 }
-.grow:hover {
+/* .grow:hover {
     position: absolute;
     transform: scale(1.5);
     transform-origin: center;
-}
+    had to comment out i misread what the requirements were
+} */
 
 
 .contact-info {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    /* height: 300px; had to comment out was preventing flex */
     color: #52f033;
 }
 
@@ -107,13 +136,8 @@ p {
     font-size: 36px;
 }
 
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'papyrus', 'comic-sans', 'sans-serif';
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
+@media (max-width: 800px){
+    a{
+        font-size: max(20px, 3vw);
+    }
 }
